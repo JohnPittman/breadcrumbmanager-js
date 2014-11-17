@@ -1,11 +1,19 @@
 "use strict";
 
-var BreadCrumbManager = require('../src/breadcrumbs');
+var BreadcrumbManager = require('../src/breadcrumbs');
 
-describe("BreadCrumbManager", function() {
+describe("BreadcrumbManager", function() {
     var bcm;
 
     beforeEach(function() {
-        bcm = new BreadCrumbManager();
+        bcm = new BreadcrumbManager();
+        bcm.add('1');
+    });
+
+    describe("#add", function() {
+        it("Adds a breadcrumb.", function() {
+            bcm.add('2');
+            expect(bcm._breadcrumbs.length).toBe(2);
+        });
     });
 });
