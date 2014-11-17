@@ -72,6 +72,10 @@ Each process is dependent upon the previous. If one fails the build process exit
 
 <h1>Release Notes</h1>
 
+<h3>v1.0.2</h3>
+
+- Going over the limit now contains the correct amount of breadcrumbs. Previously came up one short after adding a new breadcrumb at the limit.
+
 <h3>v1.0.0</h3>
 
 - Fully tested and stable.

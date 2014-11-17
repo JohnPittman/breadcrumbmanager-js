@@ -1,6 +1,6 @@
 {
     "name": "breadcrumbmanager",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Built to keep a previous path history of anything. Done in JavaScript.",
     "homepage": "https://github.com/JohnPittman/breadcrumbmanager-js",
     "authors": ["John Pittman <johnrichadrpittman@gmail.com>"],

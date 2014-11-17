@@ -77,6 +77,7 @@ gulp.task('bumpVersion', ['build'], function(cb) {
                     }
 
                     var versionStr = versionTypeValues.join('.');
+                    console.log(fileName + ' - version: ' + versionStr);
 
                     // Write the new version to .json.
                     buff.version = versionStr;

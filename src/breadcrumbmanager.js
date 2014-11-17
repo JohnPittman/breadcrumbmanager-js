@@ -49,7 +49,7 @@
         // This has to happen after the new path check.
         if (this._limit > -1) {
             // Is this limit reached?
-            if (breadcrumbs.length === this._limit)
+            if (breadcrumbs.length === this._limit + 1)
                 breadcrumbs.shift();
         }
     };
