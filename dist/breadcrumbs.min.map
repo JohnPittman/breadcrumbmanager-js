@@ -1,0 +1,1 @@
+{"version":3,"sources":["breadcrumbs.js"],"names":["root","factory","define","amd","exports","module","BreadCrumbManager","this"],"mappings":"CAAC,SAASA,EAAMC,GACU,kBAAXC,SAAyBA,OAAOC,IAEvCD,UAAWD,GACe,gBAAZG,SAEdC,OAAOD,QAAUH,IAGjBD,EAAKM,kBAAoBL,KAE/BM,KAAM,WACJ,QAASD,MAET,MAAOA","file":"breadcrumbs.min.js","sourcesContent":[null],"sourceRoot":"../src"}
