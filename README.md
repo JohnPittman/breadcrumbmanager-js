@@ -1,5 +1,5 @@
-breadcrumbs
-===========
+breadcrumbmanager
+=================
 
 Built as a way to track the previous history of anything in JavaScript.
 
@@ -15,8 +15,8 @@ Universal module defined to be used with <b>requirejs</b>, <b>node</b>, <b>commo
 
 <h4>Installation</h4>
 
-npm: npm install ? <br />
-bower: bower install ?
+npm: npm install breadcrumbmanager <br />
+bower: bower install breadcrumbmanager
 
 <h4>How to use...</h4>
 
@@ -42,4 +42,6 @@ Each process is dependent upon the previous. If one fails the build process exit
 
 <h1>Release Notes</h1>
 
-<h3></h3>
+<h3>v1.0.0</h3>
+
+- Fully tested and stable.

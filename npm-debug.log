@@ -1,0 +1,152 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files (x86)\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@1.4.23
+3 info using node@v0.10.31
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . C:\Users\john\AppData\Roaming\npm-cache\3a52ce78-.lock
+10 verbose tar pack [ 'C:\\Users\\john\\AppData\\Roaming\\npm-cache\\breadcrumbs\\1.0.0\\package.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball C:\Users\john\AppData\Roaming\npm-cache\breadcrumbs\1.0.0\package.tgz
+12 verbose folder .
+13 info prepublish breadcrumbs@1.0.0
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. C:\Users\john\AppData\Roaming\npm-cache\1f1177db-tar.lock
+16 silly lockFile bb8936a3-he-breadcrumbs-1-0-0-package-tgz tar://C:\Users\john\AppData\Roaming\npm-cache\breadcrumbs\1.0.0\package.tgz
+17 verbose lock tar://C:\Users\john\AppData\Roaming\npm-cache\breadcrumbs\1.0.0\package.tgz C:\Users\john\AppData\Roaming\npm-cache\bb8936a3-he-breadcrumbs-1-0-0-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile bb8936a3-he-breadcrumbs-1-0-0-package-tgz tar://C:\Users\john\AppData\Roaming\npm-cache\breadcrumbs\1.0.0\package.tgz
+21 silly lockFile bb8936a3-he-breadcrumbs-1-0-0-package-tgz tar://C:\Users\john\AppData\Roaming\npm-cache\breadcrumbs\1.0.0\package.tgz
+22 silly lockFile 5911eb28--cache-breadcrumbs-1-0-0-package C:\Users\john\AppData\Roaming\npm-cache\breadcrumbs\1.0.0\package
+23 verbose lock C:\Users\john\AppData\Roaming\npm-cache\breadcrumbs\1.0.0\package C:\Users\john\AppData\Roaming\npm-cache\5911eb28--cache-breadcrumbs-1-0-0-package.lock
+24 silly lockFile 5911eb28--cache-breadcrumbs-1-0-0-package C:\Users\john\AppData\Roaming\npm-cache\breadcrumbs\1.0.0\package
+25 silly lockFile 5911eb28--cache-breadcrumbs-1-0-0-package C:\Users\john\AppData\Roaming\npm-cache\breadcrumbs\1.0.0\package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 silly publish { name: 'breadcrumbs',
+28 silly publish   version: '1.0.0',
+28 silly publish   description: 'Built to keep a previous path history of anything. Done in JavaScript.',
+28 silly publish   main: 'dist/breadcrumbs.min.js',
+28 silly publish   files: [ 'src/', 'dist/', 'LICENSE', 'README' ],
+28 silly publish   repository:
+28 silly publish    { type: 'git',
+28 silly publish      url: 'https://github.com/JohnPittman/breadcrumbs-js.git' },
+28 silly publish   keywords:
+28 silly publish    [ 'fast',
+28 silly publish      'optimized',
+28 silly publish      'umd',
+28 silly publish      'universal',
+28 silly publish      'modular',
+28 silly publish      'js',
+28 silly publish      'module',
+28 silly publish      'javascript',
+28 silly publish      'breadcrumbs',
+28 silly publish      'manager',
+28 silly publish      'history',
+28 silly publish      'pathtracker' ],
+28 silly publish   author: { name: 'John Pittman' },
+28 silly publish   license: 'MIT',
+28 silly publish   bugs: { url: 'https://github.com/JohnPittman/breadcrumbs-js/issues' },
+28 silly publish   homepage: 'https://github.com/JohnPittman/breadcrumbs-js',
+28 silly publish   devDependencies:
+28 silly publish    { gulp: '^3.8.10',
+28 silly publish      'gulp-beautify': '^1.1.1',
+28 silly publish      'gulp-clean': '^0.3.1',
+28 silly publish      'gulp-jasmine': '^1.0.1',
+28 silly publish      'gulp-prompt': '^0.1.1',
+28 silly publish      'gulp-rename': '^1.2.0',
+28 silly publish      'gulp-sourcemaps': '^1.2.8',
+28 silly publish      'gulp-uglify': '^1.0.1',
+28 silly publish      'recursive-readdir': '^1.2.0' },
+28 silly publish   readme: 'breadcrumbs\r\n===========\r\n\r\nBuilt as a way to track the previous history of anything in JavaScript.\r\n\r\n<h1>Notes</h1>\r\n\r\nUniversal module defined to be used with <b>requirejs</b>, <b>node</b>, <b>commonjs</b>, or <b>global scoped</b> if no module loader is used.\r\n\r\n- All files in the <b>dist</b> folder are minified for <b>production</b> use.\r\n- All files in the <b>src</b> directory are the source code for <b>development</b> use.\r\n- Packages point at the <b>dist</b> minified code with <b>source maps</b>.\r\n\r\n<h1>Usage</h1>\r\n\r\n<h4>Installation</h4>\r\n\r\nnpm: npm install ? <br />\r\nbower: bower install ?\r\n\r\n<h4>How to use...</h4>\r\n\r\n<h1>Development</h1>\r\n\r\n<h4>Requirements</h4>\r\n\r\n- nodejs\r\n- npm install\r\n- npm install -g gulp bower\r\n\r\n<h4>Test</h4>\r\n\r\ngulp test\r\n\r\n<h4>Gulp Commands</h4>\r\n\r\nEach process is dependent upon the previous. If one fails the build process exits.\r\n\r\n- gulp test (Unit specifications)\r\n- gulp build (Test, folder clean-ups, minification, source maps, renaming)\r\n- gulp deploy (Test, build, versioning)\r\n\r\n<h1>Release Notes</h1>\r\n\r\n<h3></h3>',
+28 silly publish   readmeFilename: 'README.md',
+28 silly publish   gitHead: 'ffae8651a7f1c37c88f7283e60b041df0e6b1ae3',
+28 silly publish   _id: 'breadcrumbs@1.0.0',
+28 silly publish   scripts: {},
+28 silly publish   _shasum: '5b1eb42c21b4fd136f5321019495aca3d75a18c0',
+28 silly publish   _from: '.' }
+29 verbose request where is /breadcrumbs
+30 verbose request registry https://registry.npmjs.org/
+31 verbose request id 54c7bda8e94cd710
+32 verbose url raw /breadcrumbs
+33 verbose url resolving [ 'https://registry.npmjs.org/', './breadcrumbs' ]
+34 verbose url resolved https://registry.npmjs.org/breadcrumbs
+35 verbose request where is https://registry.npmjs.org/breadcrumbs
+36 info trying registry request attempt 1 at 05:46:13
+37 http PUT https://registry.npmjs.org/breadcrumbs
+38 http 403 https://registry.npmjs.org/breadcrumbs
+39 verbose headers { date: 'Mon, 17 Nov 2014 10:45:56 GMT',
+39 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+39 verbose headers   'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=60',
+39 verbose headers   'content-length': '2764',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   'x-served-by': 'cache-jfk1022-JFK',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1416221156.170565,VS0,VE324',
+39 verbose headers   'keep-alive': 'timeout=10, max=50',
+39 verbose headers   connection: 'Keep-Alive' }
+40 error publish Failed PUT 403
+41 error Error: forbidden user: johnpittman not authorized to modify breadcrumbs
+41 error Changed: description "Plugin for creating awesome breadcrumbs" -> "Built to keep a previous path history of anything. Done in JavaScript."
+41 error Changed: dist-tags.latest "0.0.5" -> "1.0.0"
+41 error Added: versions.1.0.0
+41 error Changed: readme "breadcrumbs.js\u000a==============\u000a\u000aPlugin for working with breadcrumbs\u000a\u000anpm install breadcrumbs" -> "breadcrumbs\u000d\u000a===========\u000d\u000a\u000d\u000aBuilt as a way to track the previous history of anything in JavaScript.\u000d\u000a\u000d\u000a<h1>Notes</h1>\u000d\u000a\u000d\u000aUniversal module defined to be used with <b>requirejs</b>, <b>node</b>, <b>commonjs</b>, or <b>global scoped</b> if no module loader is used.\u000d\u000a\u000d\u000a- All files in the <b>dist</b> folder are minified for <b>production</b> use.\u000d\u000a- All files in the <b>src</b> directory are the source code for <b>development</b> use.\u000d\u000a- Packages point at the <b>dist</b> minified code with <b>source maps</b>.\u000d\u000a\u000d\u000a<h1>Usage</h1>\u000d\u000a\u000d\u000a<h4>Installation</h4>\u000d\u000a\u000d\u000anpm: npm install ? <br />\u000d\u000abower: bower install ?\u000d\u000a\u000d\u000a<h4>How to use...</h4>\u000d\u000a\u000d\u000a<h1>Development</h1>\u000d\u000a\u000d\u000a<h4>Requirements</h4>\u000d\u000a\u000d\u000a- nodejs\u000d\u000a- npm install\u000d\u000a- npm install -g gulp bower\u000d\u000a\u000d\u000a<h4>Test</h4>\u000d\u000a\u000d\u000agulp test\u000d\u000a\u000d\u000a<h4>Gulp Commands</h4>\u000d\u000a\u000d\u000aEach process is dependent upon the previous. If one fails the build process exits.\u000d\u000a\u000d\u000a- gulp test (Unit specifications)\u000d\u000a- gulp build (Test, folder clean-ups, minification, source maps, renaming)\u000d\u000a- gulp deploy (Test, build, versioning)\u000d\u000a\u000d\u000a<h1>Release Notes</h1>\u000d\u000a\u000d\u000a<h3></h3>"
+41 error Changed: time.modified "2013-03-18T17:02:17.077Z" -> "2014-11-17T10:46:22.172Z"
+41 error Added: time.1.0.0
+41 error Changed: author.name "Alexander Mostovenko" -> "John Pittman"
+41 error Changed: repository.url "git://github.com/AlexMost/breadcrumbs.js.git" -> "https://github.com/JohnPittman/breadcrumbs-js.git"
+41 error Changed: keywords.0 "breadcrumbs" -> "fast"
+41 error Changed: keywords.1 "awesome" -> "optimized"
+41 error Changed: keywords.2 "breadcrumbs" -> "umd"
+41 error Added: keywords.3
+41 error Added: keywords.4
+41 error Added: keywords.5
+41 error Added: keywords.6
+41 error Added: keywords.7
+41 error Added: keywords.8
+41 error Added: keywords.9
+41 error Added: keywords.10
+41 error Added: keywords.11
+41 error Changed: license "BSD" -> "MIT"
+41 error Added: homepage
+41 error Added: bugs
+41 error Added: _attachments: breadcrumbs
+41 error     at RegClient.<anonymous> (c:\Program Files (x86)\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:300:14)
+41 error     at Request._callback (c:\Program Files (x86)\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:238:65)
+41 error     at Request.self.callback (c:\Program Files (x86)\nodejs\node_modules\npm\node_modules\request\request.js:123:22)
+41 error     at Request.emit (events.js:98:17)
+41 error     at Request.<anonymous> (c:\Program Files (x86)\nodejs\node_modules\npm\node_modules\request\request.js:893:14)
+41 error     at Request.emit (events.js:117:20)
+41 error     at IncomingMessage.<anonymous> (c:\Program Files (x86)\nodejs\node_modules\npm\node_modules\request\request.js:844:12)
+41 error     at IncomingMessage.emit (events.js:117:20)
+41 error     at _stream_readable.js:943:16
+41 error     at process._tickCallback (node.js:419:13)
+42 error If you need help, you may report this *entire* log,
+42 error including the npm and node versions, at:
+42 error     <http://github.com/npm/npm/issues>
+43 error System Windows_NT 6.2.9200
+44 error command "c:\\Program Files (x86)\\nodejs\\node.exe" "c:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+45 error cwd c:\Users\john\Development\Projects\working\breadcrumbs-js
+46 error node -v v0.10.31
+47 error npm -v 1.4.23
+48 verbose exit [ 1, true ]
