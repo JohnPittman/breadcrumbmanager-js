@@ -41,16 +41,15 @@
                 breadcrumbs.push(breadcrumb);
             }
         } else {
+            // Implement maximum number of breadcrumbs allowed if a limit is set.
+            if (this._limit > -1) {
+                // Is this limit reached?
+                if (breadcrumbs.length === this._limit)
+                    breadcrumbs.shift();
+            }
+
             ++this._currIndex;
             breadcrumbs.push(breadcrumb);
-        }
-
-        // Implement maximum number of breadcrumbs allowed if a limit is set.
-        // This has to happen after the new path check.
-        if (this._limit > -1) {
-            // Is this limit reached?
-            if (breadcrumbs.length === this._limit + 1)
-                breadcrumbs.shift();
         }
     };
 
