@@ -8,5 +8,5 @@
     "moduleType": ["amd", "globals", "node"],
     "keywords": ["fast", "optimized", "umd", "universal", "modular", "js", "module", "javascript", "breadcrumbs", "breadcrumbmanager", "history", "pathtracker"],
     "license": "MIT",
-    "ignore": ["gulpfile.js", ".gitignore", "package.json", "node_modules", "bower_components", "test", "tests"]
+    "ignore": ["gulpfile.js", ".gitignore", "package.json", "node_modules", "bower_components", "test", "tests", "*.log"]
 }
