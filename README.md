@@ -15,8 +15,8 @@ Universal module defined to be used with <b>requirejs</b>, <b>node</b>, <b>commo
 
 <h4>Installation</h4>
 
-npm: npm install <br />
-bower: bower install 
+npm: npm install ? <br />
+bower: bower install ?
 
 <h4>How to use...</h4>
 
