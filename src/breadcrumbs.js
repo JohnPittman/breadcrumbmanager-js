@@ -7,7 +7,7 @@
         module.exports = factory();
     } else {
         // Browser globals (root is window)
-        root.BreadCrumbManager = factory();
+        root.BreadcrumbManager = factory();
     }
 }(this, function() {
     'use strict'
@@ -16,7 +16,7 @@
      * @constructor
      * @param {int} [limit=-1] - Maximum number of breadcrumbs to track. -1 is unlimited.
      */
-    function BreadCrumbManager(limit) {
+    function BreadcrumbManager(limit) {
         this._breadcrumbs = [];
         this._limit = limit || -1;
         this._currIndex = -1;
@@ -26,7 +26,7 @@
      * Adds a new breadcrumb to the log.
      * @param {*} breadcrumb - Should be the same type as the other breadcrumbs objects.
      */
-    BreadCrumbManager.prototype.add = function(breadcrumb) {
+    BreadcrumbManager.prototype.add = function(breadcrumb) {
         var breadcrumbs = this._breadcrumbs;
         var currIndex = this._currIndex;
 
@@ -58,7 +58,7 @@
     /**
      * Removes all breadcrumbs.
      */
-    BreadCrumbManager.prototype.clear = function() {
+    BreadcrumbManager.prototype.clear = function() {
         var breadcrumbs = this._breadcrumbs;
         for (var i = 0, n = breadcrumbs.length; i < n; ++i) {
             breadcrumbs.shift();
@@ -71,7 +71,7 @@
      * @param  {*} breadcrumb
      * @return {boolean}
      */
-    BreadCrumbManager.prototype.contains = function(breadcrumb) {
+    BreadcrumbManager.prototype.contains = function(breadcrumb) {
         return (this._breadcrumbs.indexOf(breadcrumb) === -1) ? false : true;
     };
 
@@ -79,7 +79,7 @@
      * Returns the previous breadcrumb or undefined if there isn't one.
      * @return {*} - The value/object that the breadcrumb is or undefined if there is no previous.
      */
-    BreadCrumbManager.prototype.prev = function() {
+    BreadcrumbManager.prototype.prev = function() {
         return (this._currIndex > -1) ? breadcrumbs[--this._currIndex] : undefined;
     };
 
@@ -87,9 +87,9 @@
      * Returns the next breadcrumb or undefined if there isn't one.
      * @return {*} - The value/object that the breadcrumb is or undefined if there is no next.
      */
-    BreadCrumbManager.prototype.next = function() {
+    BreadcrumbManager.prototype.next = function() {
         return (this._currIndex < breadcrumbs.length - 1) ? breadcrumbs[++this._currIndex] : undefined;
     };
 
-    return BreadCrumbManager;
+    return BreadcrumbManager;
 }));
