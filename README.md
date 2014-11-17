@@ -20,7 +20,7 @@ bower: bower install breadcrumbmanager
 
 <h4>How to use...</h4>
 
-    var bcm = new BreadcrumbManager();
+    var bcm = new BreadcrumbManager(5);
 
     bcm.add('1');
     bcm.add('2');
@@ -46,6 +46,17 @@ bower: bower install breadcrumbmanager
 
     var contains = bcm.contains('1');
     console.log('Check history for 1. Breadcrumb found: ' + contains);
+
+    console.log('Add 8 breadcrumbs to breach the set limit of 5.');
+    bcm.add('6');
+    bcm.add('7');
+    bcm.add('8');
+    bcm.add('9');
+    bcm.add('10');
+    bcm.add('11');
+    bcm.add('12');
+    bcm.add('13');
+    console.log('Breadcrumbs list: ' + bcm._breadcrumbs);
 
     console.log('Clear breadcrumbs.');
     bcm.clear();
