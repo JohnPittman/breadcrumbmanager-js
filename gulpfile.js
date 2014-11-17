@@ -63,10 +63,24 @@ gulp.task('bumpVersion', ['build'], function(cb) {
 
                     if (bumpType === 'patch') {
                         var versionTypeNum = parseInt(versionTypeValues[2]);
-                        versionTypeValues[2] = (versionTypeNum < 9) ? ++versionTypeNum : 0;
+                        ++versionTypeNum;
+                        versionTypeValues[2] = versionTypeNum;
+                        if (versionTypeNum > 9) {
+                            versionTypeValues[2] = 0;
+                            var minorVersion = ++versionTypeValues[1];
+                            if (minorVersion > 9) {
+                                versionTypeValues[1] = 0;
+                                ++versionTypeValues[0];
+                            }
+                        }
                     } else if (bumpType === 'minor') {
                         var versionTypeNum = parseInt(versionTypeValues[1]);
-                        versionTypeValues[1] = (versionTypeNum < 9) ? ++versionTypeNum : 0;
+                        ++versionTypeNum;
+                        versionTypeValues[1] = versionTypeNum;
+                        if (versionTypeNum > 9) {
+                            versionTypeValues[1] = 0;
+                            ++versionTypeValues[0];
+                        }
                     } else if (bumpType === 'major') {
                         var versionTypeNum = parseInt(versionTypeValues[0]);
                         versionTypeValues[0] = ++versionTypeNum;
