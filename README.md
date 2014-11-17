@@ -20,6 +20,36 @@ bower: bower install breadcrumbmanager
 
 <h4>How to use...</h4>
 
+    var bcm = new BreadcrumbManager();
+
+    bcm.add('1');
+    bcm.add('2');
+    bcm.add('3');
+    bcm.add('4');
+    console.log('Breadcrumbs list: ' + bcm._breadcrumbs);
+
+    var breadcrumb = bcm.prev();
+    breadcrumb = bcm.prev();
+    console.log('Navigate back twice. Breadcrumb: ' + breadcrumb);
+
+    bcm.add('5');
+    console.log('Visit a new path and add: 5');
+    console.log('Breadcrumbs list: ' + bcm._breadcrumbs);
+
+    breadcrumb = bcm.prev();
+    console.log('Navigate back once. Breadcrumb: ' + breadcrumb);
+
+    breadcrumb = bcm.next();
+    console.log('Navigate forward once. Breadcrumb: ' + breadcrumb);
+    breadcrumb = bcm.next();
+    console.log('Navigate forward once. Breadcrumb: ' + breadcrumb);
+
+    var contains = bcm.contains('1');
+    console.log('Check history for 1. Breadcrumb found: ' + contains);
+
+    console.log('Clear breadcrumbs.');
+    bcm.clear();
+
 <h1>Development</h1>
 
 <h4>Requirements</h4>
