@@ -48,7 +48,7 @@ gulp.task('bumpVersion', ['build'], function(cb) {
             type: 'checkbox',
             name: 'bump',
             message: 'What type of bump would you like to do? (None)',
-            choices: ['patch', 'minor', 'major'],
+            choices: ['patch', 'minor', 'major', '1.0.0'],
         }, function(res) {
             //value is in res.bump (as an array)
             bumpType = res.bump[0];
@@ -70,6 +70,10 @@ gulp.task('bumpVersion', ['build'], function(cb) {
                     } else if (bumpType === 'major') {
                         var versionTypeNum = parseInt(versionTypeValues[0]);
                         versionTypeValues[0] = ++versionTypeNum;
+                    } else if (bumpType === '1.0.0') {
+                        versionTypeValues[0] = 1;
+                        versionTypeValues[1] = 0;
+                        versionTypeValues[2] = 0;
                     }
 
                     var versionStr = versionTypeValues.join('.');

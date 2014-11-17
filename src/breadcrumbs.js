@@ -34,11 +34,10 @@
         // An example of this would be navigating back and then taking a different route which adds
         // the need to clear all breadcrumbs ahead of the current on and start a new head.
         // Is navigation in progress?
-        if (currIndex !== breadcrumbs.length - 1) {
+        if (currIndex < breadcrumbs.length - 1) {
             // Is it a new path?
             if (breadcrumb !== breadcrumbs[currIndex + 1]) {
-                ++this._currIndex;
-                this._breadcrumbs = breadcrumbs.slice(0, currIndex);
+                breadcrumbs = this._breadcrumbs = breadcrumbs.slice(0, ++this._currIndex);
                 breadcrumbs.push(breadcrumb);
             }
         } else {
@@ -80,7 +79,7 @@
      * @return {*} - The value/object that the breadcrumb is or undefined if there is no previous.
      */
     BreadcrumbManager.prototype.prev = function() {
-        return (this._currIndex > -1) ? breadcrumbs[--this._currIndex] : undefined;
+        return (this._currIndex > -1) ? this._breadcrumbs[--this._currIndex] : undefined;
     };
 
     /**
@@ -88,7 +87,7 @@
      * @return {*} - The value/object that the breadcrumb is or undefined if there is no next.
      */
     BreadcrumbManager.prototype.next = function() {
-        return (this._currIndex < breadcrumbs.length - 1) ? breadcrumbs[++this._currIndex] : undefined;
+        return (this._currIndex < this._breadcrumbs.length - 1) ? this._breadcrumbs[++this._currIndex] : undefined;
     };
 
     return BreadcrumbManager;
