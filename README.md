@@ -1,7 +1,7 @@
 breadcrumbmanager
 =================
 
-Built as a way to track the previous history of anything and navigate back and forth through it JavaScript.
+Built as a way to track the previous history of anything and navigate back and forth through it in JavaScript.
 
 <h1>Notes</h1>
 
