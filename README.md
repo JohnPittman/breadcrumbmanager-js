@@ -20,7 +20,7 @@ bower: bower install breadcrumbmanager
 
 <h4>How to use...</h4>
 
-        var bcm = new BreadcrumbManager(5);
+    var bcm = new BreadcrumbManager(5);
 
     bcm.add('1');
     bcm.add('2');
