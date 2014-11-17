@@ -37,7 +37,9 @@
         if (currIndex < breadcrumbs.length - 1) {
             // Is it a new path?
             if (breadcrumb !== breadcrumbs[currIndex + 1]) {
-                breadcrumbs = this._breadcrumbs = breadcrumbs.slice(0, ++this._currIndex);
+                for (var i = 0, n = breadcrumbs.length - ++this._currIndex; i < n; ++i) {
+                    breadcrumbs.pop();
+                }
                 breadcrumbs.push(breadcrumb);
             }
         } else {
