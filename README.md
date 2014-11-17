@@ -42,4 +42,4 @@ Each process is dependent upon the previous. If one fails the build process exit
 
 <h1>Release Notes</h1>
 
-<h3>v1.0.0</h3>
+<h3></h3>
