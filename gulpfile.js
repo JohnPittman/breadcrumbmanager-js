@@ -197,6 +197,7 @@ gulp.task('updateSourceMapPaths', ['cleanSourceMaps'], function(cb) {
     recursiveread('./dist/', ['node_modules', 'bower_components', '.git'], function(err, files) {
         for (var i = 0; i < files.length; i++) {
             var filePath = files[i];
+            console.log(filePath);
             // Grab map file to alter.
             if (filePath.indexOf('.min.map') !== -1) {
                 // Read file.
@@ -239,6 +240,7 @@ gulp.task('updateSourceMapPaths', ['cleanSourceMaps'], function(cb) {
                     buff += currSourceFileName;
                     // Write the new .js file.
                     fs.writeFile(filePath, buff);
+                    console.log(filePath);
                 }
             }
         }
