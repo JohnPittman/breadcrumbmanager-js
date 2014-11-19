@@ -2,13 +2,13 @@
     "name": "breadcrumbmanager",
     "version": "1.0.5",
     "description": "Built to keep a previous path history of anything. Done in JavaScript.",
-    "main": "dist/breadcrumbmanager.min.js",
+    "main": "src/breadcrumbmanager.min.js",
     "files": ["src/", "dist/", "LICENSE", "README"],
     "repository": {
         "type": "git",
         "url": "https://github.com/JohnPittman/breadcrumbmanager-js.git"
     },
-    "keywords": ["fast", "optimized", "umd", "universal", "modular", "js", "module", "javascript", "breadcrumbs", "breadcrumbmanager", "history", "pathtracker"],
+    "keywords": ["fast", "optimized", "umd", "universal", "modular", "js", "module", "javascript", "breadcrumbs", "bread", "crumb", "manager", "history", "track", "path"],
     "author": "John Pittman",
     "license": "MIT",
     "bugs": {

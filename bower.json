@@ -6,7 +6,7 @@
     "authors": ["John Pittman <johnrichadrpittman@gmail.com>"],
     "main": "dist/breadcrumbmanager.min.js",
     "moduleType": ["amd", "globals", "node"],
-    "keywords": ["fast", "optimized", "umd", "universal", "modular", "js", "module", "javascript", "breadcrumbs", "breadcrumbmanager", "history", "pathtracker"],
+    "keywords": ["fast", "optimized", "umd", "universal", "modular", "js", "module", "javascript", "breadcrumbs", "bread", "crumb", "manager", "history", "track", "path"],
     "license": "MIT",
     "ignore": ["gulpfile.js", ".gitignore", "package.json", "node_modules", "bower_components", "test", "tests", "*.log"]
 }
