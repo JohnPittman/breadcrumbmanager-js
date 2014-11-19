@@ -8,7 +8,7 @@
         "type": "git",
         "url": "https://github.com/JohnPittman/breadcrumbmanager-js.git"
     },
-    "keywords": ["fast", "optimized", "umd", "universal", "modular", "js", "module", "javascript", "breadcrumbsmanager", "breadcrumbmanager", "history", "tracker", "tracking", "path"],
+    "keywords": ["fast", "optimized", "umd", "universal", "modular", "js", "module", "javascript", "breadcrumbsmanager", "breadcrumbmanager", "history", "tracker", "tracking", "path", "chickendinosaur"],
     "author": "John Pittman",
     "license": "MIT",
     "bugs": {
