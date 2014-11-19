@@ -17,7 +17,7 @@ Universal module defined to be used with <b>requirejs</b>, <b>node</b>, <b>commo
 
 - nodejs
 - npm install
-- npm install -g gulp bower
+- npm install -g gulp
 
 <h4>Test</h4>
 
@@ -27,6 +27,7 @@ gulp test
 
 Each process is dependent upon the previous. If one fails the build process exits.
 
+- gulp
 - gulp test (Unit specifications)
 - gulp build (Test, folder clean-ups, minification, source maps, renaming)
 - gulp deploy (Test, build, versioning)
@@ -82,6 +83,16 @@ bower: bower install breadcrumbmanager
     bcm.clear();
 
 <h1>Release Notes</h1>
+
+<h3>v1.1.0</h3>
+
+<h4>Breaking Changings...</h4>
+
+- Changed the name of the breadcrumbmanager.js to BreadCrumbManager.js. Captial file names for classes just make more sense to me so I can distiguish bundles and frameworks from single classes.
+
+<h4>Additional...</h4>
+
+- Change the "main" property in package.json to point to the src/EventHandler.js since node is what uses it and needs the source code for debugging. If using things like Browserify it won't matter since the minification process happens after all files are compiled into one. This is better for everyone.
 
 <h3>v1.0.4</h3>
 
