@@ -1,6 +1,6 @@
 "use strict";
 
-var BreadcrumbManager = require('../src/breadcrumbmanager');
+var BreadcrumbManager = require('../src/BreadcrumbManager');
 
 describe("BreadcrumbManager", function() {
     var bcm;
