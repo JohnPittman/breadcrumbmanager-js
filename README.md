@@ -88,7 +88,7 @@ bower: bower install breadcrumbmanager
 
 <h4>Breaking Changings...</h4>
 
-- Changed the name of the breadcrumbmanager.js to BreadCrumbManager.js. Captial file names for classes just make more sense to me so I can distiguish bundles and frameworks from single classes.
+- Changed the name of the breadcrumbmanager.js to BreadcrumbManager.js. Captial file names for classes just make more sense to me so I can distiguish bundles and frameworks from single classes.
 
 <h4>Additional...</h4>
 
