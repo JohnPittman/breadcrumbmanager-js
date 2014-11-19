@@ -1,6 +1,6 @@
 {
     "name": "breadcrumbmanager",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "Built to keep a previous path history of anything. Done in JavaScript.",
     "main": "src/breadcrumbmanager.min.js",
     "files": ["src/", "dist/", "LICENSE", "README"],
